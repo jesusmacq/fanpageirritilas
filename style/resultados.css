@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../img/3607424.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #e6d7d7;
+}
+
+header {
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+    border: #a19b13 5px solid;
+    border-radius: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 100%;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos específicos para la página de resultados */
+.results-section {
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.results-section h2 {
+    color: #28a745; /* Un color representativo del equipo */
+    margin-top: 10px;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.match-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.match-info {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.match-info .date {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.match-info .competition {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.team-score {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team img {
+    width: 15%;
+    height: 15%;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.team h3 {
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+}
+
+.score {
+    width: 150px;
+    height: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.score span {
+    margin: 0 10px;
+}
+
+.details-link {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.details-link:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la barra lateral */
+.sidebar h3 {
+    color: #c3bf1d;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.next-matches {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.next-matches li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.next-matches li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.next-matches .date {
+    font-weight: bold;
+    color:#21d317;
+    margin-bottom: 2px;
+}
+
+.next-matches .opponent {
+    color: #f5efef;
+}
+
+.next-matches .competition.small {
+    font-size: 0.8em;
+    color: #f8f3f3;
+}
+
+.standings {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.standings th, .standings td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.standings th {
+    background-color: #f0f0f041;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .results-section {
+        padding-right: 0;
+        border-right: none;
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        padding-left: 0;
+    }
+
+    .team-score {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team {
+        margin-bottom: 10px;
+    }
+
+    .score {
+        margin: 10px 0;
+    }
+}
